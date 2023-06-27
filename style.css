@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.554);
+  margin: 100px auto;
+  width: 500px;
+  border: 1px solid rgb(141, 141, 141);
+  border-collapse: collapse;
+}
+
+caption {
+  font-weight: bold;
+}
+
+thead {
+  color: white;
+  background-color: rgb(112, 112, 112);
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+input {
+  width: 50px;
+  text-align: right;
+}
+
+.nota {
+  text-align: center;
+}
+
+.medias {
+  color: white;
+  background-color: rgb(112, 112, 112);
+  text-align: left;
+  text-indent: 5px;
+}
+
+.md-notas {
+  color: white;
+  background-color: rgb(112, 112, 112);
+  text-align: center;
+}
+
+.div-btn {
+  display: block;
+  text-align: center;
+}
+
+#cal-medias {
+  position: relative;
+  padding: 5px;
+  bottom: 80px;
+  box-shadow: 2px 3px 10px rgba(96, 96, 96, 0.27);
+}
