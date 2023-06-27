@@ -1,5 +1,4 @@
-
-//  Função para tratamento de erros que impede valores NaN, valores abaixo de 0 
+//  Função para tratamento de erros que impede valores NaN, valores abaixo de 0
 // e valores acima de 10 nos inputs e calcula sua média
 
 function validarNotas(nota1, nota2, id) {
@@ -19,19 +18,20 @@ function validarNotas(nota1, nota2, id) {
   }
 }
 
-
 //  Função para tratamento de erro na saida das médias
 
-function mediaGeral(media, idmedia) {
-  if (isNaN(media)) {
+function mediaGeral(media1, idmedia, media2, idmedia2) {
+  if (isNaN(media1) || isNaN(media2)) {
     document.getElementById("erro").innerHTML =
       "Preencha toda a tabela para obter as Médias.";
+    document.getElementById(idmedia).innerHTML = "";
+    document.getElementById(idmedia2).innerHTML = "";
   } else {
     document.getElementById("erro").innerHTML = "";
-    document.getElementById(idmedia).innerHTML = media.toFixed(2);
+    document.getElementById(idmedia).innerHTML = media1.toFixed(2);
+    document.getElementById(idmedia2).innerHTML = media2.toFixed(2);
   }
 }
-
 
 //  Função para pegar os valores dos inputs
 
@@ -68,9 +68,9 @@ function pegarValor() {
 
   // Médias de Exatas
   var mediaExatas = (mediaMat + mediaFis + mediaQuim + mediaBio) / 4;
-  mediaGeral(mediaExatas, "md-exatas");
 
   // Médias de Humanas
   var mediaHumanas = (mediaHist + mediaGeo) / 2;
-  mediaGeral(mediaHumanas, "md-humanas");
+
+  mediaGeral(mediaHumanas, "md-humanas", mediaExatas, "md-exatas");
 }
