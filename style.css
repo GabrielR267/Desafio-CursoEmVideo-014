@@ -54,8 +54,17 @@ input {
 }
 
 .div-btn {
-  display: block;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-btn > span {
+  color: white;
+  background-color: rgb(251, 57, 57);
+  position: relative;
+  bottom: 50px;
 }
 
 #cal-medias {

@@ -28,26 +28,42 @@
         <tr>
           <th scope="rowgroup" rowspan="4" colspan="1">Exatas</th>
           <th scope="row" colspan="2">Matemática</th>
-          <td class="nota"><input id="mat-nota1" type="number" /></td>
-          <td class="nota"><input id="mat-nota2" type="number" /></td>
+          <td class="nota">
+            <input id="mat-nota1" type="number" min="0" max="10" />
+          </td>
+          <td class="nota">
+            <input id="mat-nota2" type="number" min="0" max="10" />
+          </td>
           <td class="nota" id="md-mat"></td>
         </tr>
         <tr>
           <th scope="row" colspan="2">Física</th>
-          <td class="nota"><input id="fis-nota1" type="number" /></td>
-          <td class="nota"><input id="fis-nota2" type="number" /></td>
+          <td class="nota">
+            <input id="fis-nota1" type="number" min="0" max="10" />
+          </td>
+          <td class="nota">
+            <input id="fis-nota2" type="number" min="0" max="10" />
+          </td>
           <td class="nota" id="md-fisic"></td>
         </tr>
         <tr>
           <th scope="row" colspan="2">Química</th>
-          <td class="nota"><input id="quim-nota1" type="number" /></td>
-          <td class="nota"><input id="quim-nota2" type="number" /></td>
+          <td class="nota">
+            <input id="quim-nota1" type="number" min="0" max="10" />
+          </td>
+          <td class="nota">
+            <input id="quim-nota2" type="number" min="0" max="10" />
+          </td>
           <td class="nota" id="md-quim"></td>
         </tr>
         <tr>
           <th scope="row" colspan="2">Biologia</th>
-          <td class="nota"><input id="bio-nota1" type="number" /></td>
-          <td class="nota"><input id="bio-nota2" type="number" /></td>
+          <td class="nota">
+            <input id="bio-nota1" type="number" min="0" max="10" />
+          </td>
+          <td class="nota">
+            <input id="bio-nota2" type="number" min="0" max="10" />
+          </td>
           <td class="nota" id="md-bio"></td>
         </tr>
         <tr>
@@ -57,14 +73,22 @@
         <tr>
           <th scope="rowgroup" rowspan="2" colspan="1">Humanas</th>
           <th scope="row" colspan="2">História</th>
-          <td class="nota"><input id="hist-nota1" type="number" /></td>
-          <td class="nota"><input id="hist-nota2" type="number" /></td>
+          <td class="nota">
+            <input id="hist-nota1" type="number" min="0" max="10" />
+          </td>
+          <td class="nota">
+            <input id="hist-nota2" type="number" min="0" max="10" />
+          </td>
           <td class="nota" id="md-hist"></td>
         </tr>
         <tr>
           <th scope="row" colspan="2">Geografia</th>
-          <td class="nota"><input id="geo-nota1" type="number" /></td>
-          <td class="nota"><input id="geo-nota2" type="number" /></td>
+          <td class="nota">
+            <input id="geo-nota1" type="number" min="0" max="10" />
+          </td>
+          <td class="nota">
+            <input id="geo-nota2" type="number" min="0" max="10" />
+          </td>
           <td class="nota" id="md-geo"></td>
         </tr>
         <tr>
@@ -75,6 +99,7 @@
     </table>
     <div class="div-btn">
       <button id="cal-medias" onclick="pegarValor()">Calcular Médias</button>
+      <span id="erro"></span>
     </div>
   </body>
 </html>
